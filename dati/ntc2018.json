@@ -1,0 +1,14 @@
+{
+  "_fonte": "NTC 2018 - Tab. 3.2.IV (coefficienti di sottosuolo) e Tab. 7.3.II (fattori di comportamento)",
+  "sottosuolo": {
+    "A": {"Ss": [1.00, 0.00], "Ss_lim": [1.00, 1.00], "Cc": [1.00, 0.00]},
+    "B": {"Ss": [1.40, 0.40], "Ss_lim": [1.00, 1.20], "Cc": [1.10, -0.20]},
+    "C": {"Ss": [1.70, 0.60], "Ss_lim": [1.00, 1.50], "Cc": [1.05, -0.33]},
+    "D": {"Ss": [2.40, 1.50], "Ss_lim": [0.90, 1.80], "Cc": [1.25, -0.50]},
+    "E": {"Ss": [2.00, 1.10], "Ss_lim": [1.00, 1.60], "Cc": [1.15, -0.40]}
+  },
+  "topografia": {"T1": 1.0, "T2": 1.2, "T3": 1.2, "T4": 1.4},
+  "_nota_sottosuolo": "Ss = a - b*F0*ag/g limitato in Ss_lim; Cc = a*(Tc*)^b",
+  "q0_telai_ca": {"CD_A": 4.5, "CD_B": 3.0},
+  "au_a1": {"un_piano": 1.1, "piu_piani_una_campata": 1.2, "piu_piani_piu_campate": 1.3}
+}

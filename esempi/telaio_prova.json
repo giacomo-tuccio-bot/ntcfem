@@ -1,0 +1,353 @@
+{
+  "descrizione": "Telaio di prova c.a. - 2 piani, 2 campate in X, 1 in Y",
+  "nodi": [
+    {
+      "id": "N1",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "incastro": true
+    },
+    {
+      "id": "N2",
+      "x": 5.0,
+      "y": 0.0,
+      "z": 0.0,
+      "incastro": true
+    },
+    {
+      "id": "N3",
+      "x": 10.0,
+      "y": 0.0,
+      "z": 0.0,
+      "incastro": true
+    },
+    {
+      "id": "N4",
+      "x": 0.0,
+      "y": 5.0,
+      "z": 0.0,
+      "incastro": true
+    },
+    {
+      "id": "N5",
+      "x": 5.0,
+      "y": 5.0,
+      "z": 0.0,
+      "incastro": true
+    },
+    {
+      "id": "N6",
+      "x": 10.0,
+      "y": 5.0,
+      "z": 0.0,
+      "incastro": true
+    },
+    {
+      "id": "N7",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 3.0,
+      "incastro": false
+    },
+    {
+      "id": "N8",
+      "x": 5.0,
+      "y": 0.0,
+      "z": 3.0,
+      "incastro": false
+    },
+    {
+      "id": "N9",
+      "x": 10.0,
+      "y": 0.0,
+      "z": 3.0,
+      "incastro": false
+    },
+    {
+      "id": "N10",
+      "x": 0.0,
+      "y": 5.0,
+      "z": 3.0,
+      "incastro": false
+    },
+    {
+      "id": "N11",
+      "x": 5.0,
+      "y": 5.0,
+      "z": 3.0,
+      "incastro": false
+    },
+    {
+      "id": "N12",
+      "x": 10.0,
+      "y": 5.0,
+      "z": 3.0,
+      "incastro": false
+    },
+    {
+      "id": "N13",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 6.0,
+      "incastro": false
+    },
+    {
+      "id": "N14",
+      "x": 5.0,
+      "y": 0.0,
+      "z": 6.0,
+      "incastro": false
+    },
+    {
+      "id": "N15",
+      "x": 10.0,
+      "y": 0.0,
+      "z": 6.0,
+      "incastro": false
+    },
+    {
+      "id": "N16",
+      "x": 0.0,
+      "y": 5.0,
+      "z": 6.0,
+      "incastro": false
+    },
+    {
+      "id": "N17",
+      "x": 5.0,
+      "y": 5.0,
+      "z": 6.0,
+      "incastro": false
+    },
+    {
+      "id": "N18",
+      "x": 10.0,
+      "y": 5.0,
+      "z": 6.0,
+      "incastro": false
+    }
+  ],
+  "sezioni": {
+    "P30x30": {
+      "b": 0.3,
+      "h": 0.3,
+      "materiale": "C25/30"
+    },
+    "T30x50": {
+      "b": 0.3,
+      "h": 0.5,
+      "materiale": "C25/30"
+    }
+  },
+  "aste": [
+    {
+      "id": "P1",
+      "i": "N1",
+      "j": "N7",
+      "sezione": "P30x30",
+      "tipo": "pilastro"
+    },
+    {
+      "id": "P2",
+      "i": "N2",
+      "j": "N8",
+      "sezione": "P30x30",
+      "tipo": "pilastro"
+    },
+    {
+      "id": "P3",
+      "i": "N3",
+      "j": "N9",
+      "sezione": "P30x30",
+      "tipo": "pilastro"
+    },
+    {
+      "id": "P4",
+      "i": "N4",
+      "j": "N10",
+      "sezione": "P30x30",
+      "tipo": "pilastro"
+    },
+    {
+      "id": "P5",
+      "i": "N5",
+      "j": "N11",
+      "sezione": "P30x30",
+      "tipo": "pilastro"
+    },
+    {
+      "id": "P6",
+      "i": "N6",
+      "j": "N12",
+      "sezione": "P30x30",
+      "tipo": "pilastro"
+    },
+    {
+      "id": "P7",
+      "i": "N7",
+      "j": "N13",
+      "sezione": "P30x30",
+      "tipo": "pilastro"
+    },
+    {
+      "id": "P8",
+      "i": "N8",
+      "j": "N14",
+      "sezione": "P30x30",
+      "tipo": "pilastro"
+    },
+    {
+      "id": "P9",
+      "i": "N9",
+      "j": "N15",
+      "sezione": "P30x30",
+      "tipo": "pilastro"
+    },
+    {
+      "id": "P10",
+      "i": "N10",
+      "j": "N16",
+      "sezione": "P30x30",
+      "tipo": "pilastro"
+    },
+    {
+      "id": "P11",
+      "i": "N11",
+      "j": "N17",
+      "sezione": "P30x30",
+      "tipo": "pilastro"
+    },
+    {
+      "id": "P12",
+      "i": "N12",
+      "j": "N18",
+      "sezione": "P30x30",
+      "tipo": "pilastro"
+    },
+    {
+      "id": "T13",
+      "i": "N7",
+      "j": "N8",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T14",
+      "i": "N8",
+      "j": "N9",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T15",
+      "i": "N10",
+      "j": "N11",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T16",
+      "i": "N11",
+      "j": "N12",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T17",
+      "i": "N7",
+      "j": "N10",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T18",
+      "i": "N8",
+      "j": "N11",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T19",
+      "i": "N9",
+      "j": "N12",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T20",
+      "i": "N13",
+      "j": "N14",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T21",
+      "i": "N14",
+      "j": "N15",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T22",
+      "i": "N16",
+      "j": "N17",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T23",
+      "i": "N17",
+      "j": "N18",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T24",
+      "i": "N13",
+      "j": "N16",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T25",
+      "i": "N14",
+      "j": "N17",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    },
+    {
+      "id": "T26",
+      "i": "N15",
+      "j": "N18",
+      "sezione": "T30x50",
+      "tipo": "trave"
+    }
+  ],
+  "impalcati": [
+    {
+      "z": 3.0,
+      "G1": 3.0,
+      "G2": 2.0,
+      "Q": 2.0,
+      "psi2": 0.3
+    },
+    {
+      "z": 6.0,
+      "G1": 3.0,
+      "G2": 2.0,
+      "Q": 2.0,
+      "psi2": 0.3
+    }
+  ],
+  "sismica": {
+    "ag": 0.2,
+    "F0": 2.5,
+    "Tc_star": 0.3,
+    "sottosuolo": "C",
+    "topografia": "T1",
+    "q": 3.6,
+    "xi": 0.05,
+    "_nota": "parametri di ESEMPIO: sostituire con quelli del sito"
+  }
+}
