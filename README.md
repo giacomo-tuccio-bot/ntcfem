@@ -6,7 +6,7 @@ con controllo dei risultati tramite Claude Code.
 > Strumento in sviluppo, non validato: i risultati vanno confrontati con un software
 > commerciale (es. Edilus). La responsabilita' del calcolo resta del progettista.
 
-## Cosa fa oggi (v0.1.0)
+## Cosa fa oggi (v0.2.0)
 - Telaio 3D con impalcati rigidi, masse G1+G2+psi2*Q
 - Analisi modale (periodi, masse partecipanti)
 - Spettro di progetto SLV NTC 2018 e combinazione CQC

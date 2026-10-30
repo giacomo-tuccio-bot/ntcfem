@@ -1,0 +1,4333 @@
+{
+ "voci": [
+  {
+   "id": "C01.01",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Pilastri rettangolari e quadrati.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.02",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Pilastri circolari.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.03",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Pilastri a sezione irregolare (L, T, croce).",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.04",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Pilastri snelli.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.05",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Pilastri inclinati.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.06",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Pilastri corti soggetti a taglio.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.07",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Travi semplicemente appoggiate.",
+   "fase": 2,
+   "stato": "fatto",
+   "modulo": "ntcfem/elementi/trave_ca_appoggiata.py"
+  },
+  {
+   "id": "C01.08",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Travi continue su più appoggi.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.09",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Travi a sbalzo.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.10",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Travi a spessore di solaio.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.11",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Travi emergenti e ribassate.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.12",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Travi a sezione T o L.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.13",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Travi inclinate.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.14",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Travi curve.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.15",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Travi parete (travi alte).",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.16",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Travi di collegamento tra pareti.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.17",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Mensole corte e selle Gerber.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.18",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Setti strutturali in cemento armato.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.19",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Pareti di taglio antisismiche.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.20",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Nuclei rigidi di scale e ascensori.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.21",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Nodi trave-pilastro interni, esterni e d’angolo.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.22",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Piastre e solette in cemento armato.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.23",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Piastre a sbalzo.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.24",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Solai a fungo senza travi.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.25",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Capitelli e zone rinforzate contro il punzonamento.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.26",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Elementi prefabbricati e relativi collegamenti.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C01.27",
+   "categoria": 1,
+   "nome_categoria": "Strutture in cemento armato",
+   "voce": "Elementi in cemento armato precompresso, quando impiegati nell’edilizia.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.01",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai laterocementizi.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.02",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai con travetti prefabbricati e pignatte.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.03",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai completamente in opera.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.04",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai con lastre predalles.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.05",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai alveolari prefabbricati.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.06",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai pieni in cemento armato.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.07",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai a piastra bidirezionale.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.08",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai nervati e a cassettoni.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.09",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai a sbalzo.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.10",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai con travi in acciaio e tavelloni.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.11",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai con putrelle metalliche.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.12",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai con lamiera grecata collaborante.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.13",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai in legno con travi e tavolato.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.14",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai in legno con pannelli CLT.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.15",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai misti legno-calcestruzzo.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.16",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai misti acciaio-calcestruzzo.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.17",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai con aperture e forometrie.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.18",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai con carichi concentrati.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.19",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai per autorimesse.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.20",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai per archivi e depositi.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.21",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai per terrazze praticabili.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.22",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Solai per coperture non praticabili.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.23",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Verifica di solai esistenti per cambio di destinazione d’uso.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C02.24",
+   "categoria": 2,
+   "nome_categoria": "Solai e impalcati",
+   "voce": "Verifica e rinforzo di solai per nuovi carichi.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.01",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Plinti isolati centrati.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.02",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Plinti eccentrici.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.03",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Plinti collegati con travi.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.04",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Plinti combinati per più pilastri.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.05",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Plinti di confine.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.06",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Fondazioni continue sotto murature.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.07",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Travi rovesce.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.08",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Graticci di travi rovesce.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.09",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Platee di fondazione.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.10",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Platee nervate.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.11",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Platee alleggerite.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.12",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Platee a spessore variabile.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.13",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Platee con pilastri direttamente impostati.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.14",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Platee con setti strutturali.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.15",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Fondazioni a gradoni.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.16",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Fondazioni su terreno inclinato.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.17",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Fondazioni a quote differenti.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.18",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Fondazioni eccentriche in prossimità di confini.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.19",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Fondazioni su terreni di riporto, previa caratterizzazione e verifica dell’idoneità geotecnica.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.20",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Fondazioni su terreni migliorati.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.21",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Fondazioni in presenza di falda.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.22",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Fondazioni adiacenti ad edifici esistenti.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C03.23",
+   "categoria": 3,
+   "nome_categoria": "Fondazioni superficiali",
+   "voce": "Fondazioni di piccoli manufatti, recinzioni e strutture pertinenziali.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.01",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Pali trivellati.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.02",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Pali a elica continua (CFA).",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.03",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Pali battuti.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.04",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Pali prefabbricati.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.05",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Micropali.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.06",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Pali inclinati.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.07",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Pali soggetti a compressione.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.08",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Pali soggetti a trazione.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.09",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Pali soggetti a carichi orizzontali.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.10",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Pali soggetti a momento flettente.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.11",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Pali isolati.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.12",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Gruppi di pali.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.13",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Plinti su pali.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.14",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Travi di fondazione su pali.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.15",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Platee su pali (piled raft).",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.16",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Plinti su micropali.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.17",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Fondazioni miste superficiali-profonde.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.18",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Pali in presenza di attrito negativo.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.19",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Pali soggetti a cedimenti del terreno.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.20",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Verifiche degli effetti di gruppo.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.21",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Verifica dei cedimenti di fondazioni profonde.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.22",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Verifiche di interazione palo-terreno-struttura.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.23",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Collegamenti testa palo-plinto o platea.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C04.24",
+   "categoria": 4,
+   "nome_categoria": "Fondazioni profonde",
+   "voce": "Sottofondazioni mediante micropali.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.01",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Muri di sostegno a gravità.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.02",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Muri di sostegno in cemento armato a mensola.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.03",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Muri di sostegno a contrafforti.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.04",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Muri di sostegno a semigravità.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.05",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Muri di sostegno prefabbricati.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.06",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Muri di sostegno in blocchi o muratura.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.07",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Muri di sostegno in gabbioni.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.08",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Muri di sostegno in terra rinforzata.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.09",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Muri per contenimento di giardini e terrazzamenti.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.10",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Muri controterra di piani interrati.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.11",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Pareti perimetrali di scantinati.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.12",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Pareti controterra vincolate agli impalcati.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.13",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Paratie di pali.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.14",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Paratie di micropali.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.15",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Paratie con ancoraggi.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.16",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Diaframmi in cemento armato.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.17",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Berlinesi di sostegno.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.18",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Opere di sostegno provvisorie degli scavi.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.19",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Opere con tiranti e ancoraggi.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.20",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Verifica della stabilità globale muro-terreno.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.21",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Verifiche di scorrimento, ribaltamento e capacità portante.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C05.22",
+   "categoria": 5,
+   "nome_categoria": "Opere di sostegno e strutture controterra",
+   "voce": "Verifiche idrauliche e delle sovrappressioni interstiziali.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.01",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Pilastri in profilati HEA, HEB, HEM.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.02",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Pilastri in profili tubolari circolari.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.03",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Pilastri in profili tubolari quadrati e rettangolari.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.04",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Pilastri composti.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.05",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Travi IPE, HEA, HEB.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.06",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Travi reticolari.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.07",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Travi alveolari.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.08",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Travi scatolari.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.09",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Travi curve.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.10",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Travi a sbalzo.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.11",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Travi a sezione variabile.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.12",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Telai semplici.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.13",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Telai rigidi.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.14",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Telai controventati.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.15",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Portali metallici.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.16",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Controventi a X, V, K e diagonali.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.17",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Capriate metalliche.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.18",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Strutture spaziali reticolari.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.19",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Impalcati metallici.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.20",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Soppalchi metallici.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.21",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Pensiline metalliche.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.22",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Tettoie metalliche.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.23",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Strutture tubolari.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.24",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Strutture con profili formati a freddo.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.25",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Elementi soggetti a instabilità flessionale, torsionale e flesso-torsionale.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C06.26",
+   "categoria": 6,
+   "nome_categoria": "Strutture in acciaio",
+   "voce": "Strutture leggere modulari e prefabbricate.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.01",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Giunti trave-pilastro.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.02",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Giunti trave-trave.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.03",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Collegamenti rigidi.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.04",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Collegamenti incernierati.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.05",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Collegamenti semirigidi.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.06",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Collegamenti bullonati.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.07",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Collegamenti saldati.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.08",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Giunti flangiati.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.09",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Giunti con piastre di estremità.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.10",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Giunti con squadrette.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.11",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Piastre di base dei pilastri.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.12",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Piastre di base con tirafondi.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.13",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Tirafondi a trazione e taglio.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.14",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Piastre di ripartizione.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.15",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Collegamenti di controventi.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.16",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Verifica delle saldature a cordone d’angolo.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.17",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Verifica delle saldature a piena penetrazione.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.18",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Collegamenti con bulloni precaricati.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.19",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Verifica dello scorrimento delle unioni.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.20",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Verifica delle piastre per rifollamento e strappo.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C07.21",
+   "categoria": 7,
+   "nome_categoria": "Unioni e collegamenti metallici",
+   "voce": "Ancoraggi dell’acciaio a strutture in cemento armato.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.01",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Travi in legno massiccio.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.02",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Travi in legno lamellare.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.03",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Travi composte.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.04",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Travi curve in legno lamellare.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.05",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Pilastri in legno.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.06",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Capriate tradizionali in legno.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.07",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Capriate in legno lamellare.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.08",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Arcarecci.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.09",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Puntoni.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.10",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Catene e tiranti.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.11",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Controventature.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.12",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Strutture a telaio in legno.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.13",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Pareti portanti in CLT.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.14",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Solai in CLT.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.15",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Coperture in CLT.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.16",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Strutture a pannelli X-Lam.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.17",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Case prefabbricate in legno.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.18",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Soppalchi in legno.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.19",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Pergolati in legno.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.20",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Tettoie in legno.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.21",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Pensiline in legno.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.22",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Collegamenti con viti strutturali.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.23",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Collegamenti con bulloni e spinotti.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.24",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Connessioni con piastre metalliche.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.25",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Scarpe metalliche per travi.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.26",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Hold-down e ancoraggi antisismici.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.27",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Verifica della compressione perpendicolare alla fibratura.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.28",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Verifica di instabilità, deformazione e vibrazione.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C08.29",
+   "categoria": 8,
+   "nome_categoria": "Strutture in legno",
+   "voce": "Verifica della durabilità e delle condizioni di umidità.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.01",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Pareti portanti in muratura ordinaria.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.02",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Pareti in muratura armata.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.03",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Pareti in laterizio portante.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.04",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Pareti in blocchi di calcestruzzo.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.05",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Pareti in pietrame.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.06",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Murature miste.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.07",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Pareti con aperture.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.08",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Maschi murari.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.09",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Fasce di piano.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.10",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Architravi.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.11",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Archi in muratura.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.12",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Volte a botte.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.13",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Volte a crociera.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.14",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Volte in mattoni.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.15",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Pilastri in muratura.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.16",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Setti murari.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.17",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Cantonali.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.18",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Cordoli in cemento armato.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.19",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Cordoli in acciaio.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.20",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Cerchiature di aperture.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.21",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Verifiche fuori piano delle pareti.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.22",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Verifiche nel piano delle pareti.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.23",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Verifica dei meccanismi locali di ribaltamento.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.24",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Verifica delle spinte di archi e volte.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C09.25",
+   "categoria": 9,
+   "nome_categoria": "Strutture in muratura",
+   "voce": "Verifica delle strutture murarie per carichi concentrati.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.01",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Travi composte acciaio-calcestruzzo.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.02",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Pilastri composti acciaio-calcestruzzo.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.03",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Solai collaboranti acciaio-calcestruzzo.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.04",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Travi legno-calcestruzzo.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.05",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Solai legno-calcestruzzo.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.06",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Connessioni per solai collaboranti.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.07",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Strutture miste muratura e cemento armato.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.08",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Strutture miste acciaio-legno.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.09",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Telai in acciaio con tamponamenti collaboranti, quando previsti nel modello.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.10",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Sistemi prefabbricati in cemento armato.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.11",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Collegamenti tra elementi prefabbricati.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.12",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Pannelli portanti prefabbricati.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.13",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Moduli tridimensionali prefabbricati.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.14",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Strutture con elementi precompressi.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C10.15",
+   "categoria": 10,
+   "nome_categoria": "Strutture miste e sistemi costruttivi speciali",
+   "voce": "Strutture con materiali compositi FRP o FRCM, nei rispettivi ambiti di applicazione.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.01",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale in cemento armato a soletta rampante.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.02",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale in cemento armato con travi laterali.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.03",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale con gradini a sbalzo.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.04",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale con gradini incastrati nella parete.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.05",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale a chiocciola in cemento armato.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.06",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale a chiocciola in acciaio.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.07",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale a chiocciola in legno.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.08",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale elicoidali.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.09",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale circolari.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.10",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale con cosciale centrale.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.11",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale con due cosciali laterali.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.12",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale in acciaio con gradini in legno.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.13",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale in acciaio con gradini in vetro.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.14",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale totalmente in legno.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.15",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale sospese con tiranti.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.16",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale a sbalzo con struttura nascosta.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.17",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale prefabbricate.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.18",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale esterne di sicurezza.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.19",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale con pianerottoli sospesi.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.20",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale a doppia rampa.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.21",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale a tre rampe.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.22",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale autoportanti.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.23",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Scale con collegamenti antisismici.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.24",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Rampe pedonali.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.25",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Rampe carrabili in cemento armato.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.26",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Rampe metalliche.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C11.27",
+   "categoria": 11,
+   "nome_categoria": "Scale e rampe",
+   "voce": "Rampe curve per autorimesse.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.01",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Balconi in cemento armato a sbalzo.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.02",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Balconi su travi sporgenti.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.03",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Balconi con pilastri esterni.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.04",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Balconi metallici.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.05",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Balconi prefabbricati.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.06",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Balconi sospesi con tiranti.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.07",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Terrazze strutturali.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.08",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Verande sopraelevate.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.09",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Logge.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.10",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Pensiline in cemento armato.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.11",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Pensiline in acciaio.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.12",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Pensiline in legno.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.13",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Pensiline sospese.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.14",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Tettoie su pilastri.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.15",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Tettoie fissate a parete.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.16",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Pergolati.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.17",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Pergole bioclimatiche.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.18",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Coperture piane.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.19",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Coperture inclinate a una o più falde.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.20",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Coperture curve.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.21",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Coperture con capriate.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.22",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Coperture leggere con pannelli sandwich.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.23",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Coperture verdi.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.24",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Coperture con impianti fotovoltaici.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.25",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Coperture con macchine e impianti tecnologici.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.26",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Aggetti di gronda.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C12.27",
+   "categoria": 12,
+   "nome_categoria": "Balconi, terrazze, coperture e aggetti",
+   "voce": "Cornicioni e cornicioni storici.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.01",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Parapetti in cemento armato.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.02",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Parapetti metallici.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.03",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Parapetti in vetro strutturale.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.04",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Ringhiere metalliche.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.05",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Ringhiere in legno.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.06",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Balaustre.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.07",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Recinzioni in muratura.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.08",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Recinzioni in cemento armato.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.09",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Recinzioni metalliche.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.10",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Muri di confine.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.11",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Pilastrini per cancelli.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.12",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Cancelli carrabili pesanti.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.13",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Cancelli scorrevoli.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.14",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Portoni e telai di sostegno.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.15",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Carport.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.16",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Gazebo.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.17",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Verande esterne.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.18",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Strutture per tende da sole.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.19",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Strutture per tettoie fotovoltaiche.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.20",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Basamenti per macchinari.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.21",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Basamenti per unità esterne di climatizzazione.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.22",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Basamenti per serbatoi.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.23",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Supporti per pannelli solari.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.24",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Strutture per insegne.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.25",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Strutture di sostegno per facciate e rivestimenti.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C13.26",
+   "categoria": 13,
+   "nome_categoria": "Elementi accessori e pertinenziali",
+   "voce": "Elementi di ancoraggio delle facciate ventilate.",
+   "fase": 5,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.01",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Piscine interrate in cemento armato.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.02",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Piscine fuori terra.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.03",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Piscine su terrazza.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.04",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Piscine su solai.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.05",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Piscine a sfioro.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.06",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Piscine sospese.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.07",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Piscine prefabbricate con struttura di supporto.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.08",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Vasche di accumulo acqua.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.09",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Vasche antincendio.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.10",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Cisterne interrate.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.11",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Serbatoi sopraelevati.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.12",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Serbatoi su strutture metalliche.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.13",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Serbatoi in cemento armato.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.14",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Vasche controterra.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.15",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Vasche soggette a spinta idrostatica.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.16",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Verifica del galleggiamento di vasche interrate.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.17",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Verifica della fessurazione per la tenuta dei liquidi.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C14.18",
+   "categoria": 14,
+   "nome_categoria": "Piscine, vasche e serbatoi",
+   "voce": "Verifiche sismiche dei serbatoi e dei relativi supporti.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.01",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Vani ascensore in cemento armato.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.02",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Vani ascensore metallici.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.03",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Castelletti ascensore esterni.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.04",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Strutture per piattaforme elevatrici.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.05",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Fondazioni dei castelletti ascensore.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.06",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Fosse ascensore.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.07",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Travature per sostegno macchinari ascensore.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.08",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Ancoraggi delle guide ascensore.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.09",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Strutture per montacarichi.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.10",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Passerelle interne di manutenzione.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.11",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Strutture di supporto per impianti di ventilazione.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.12",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Strutture per unità di trattamento aria.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.13",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Supporti per impianti fotovoltaici.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.14",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Strutture di sostegno per canne fumarie.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.15",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Strutture per antenne su copertura.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C15.16",
+   "categoria": 15,
+   "nome_categoria": "Ascensori e strutture tecnologiche",
+   "voce": "Strutture per serbatoi e apparecchiature impiantistiche.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.01",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Apertura di vani in muratura portante.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.02",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Allargamento di porte e finestre.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.03",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Realizzazione di cerchiature metalliche.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.04",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Cerchiature in cemento armato.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.05",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Chiusura di aperture strutturali.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.06",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Demolizione di pareti portanti.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.07",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Sostituzione di pareti portanti con telai.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.08",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Rinforzo di pilastri.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.09",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Incamiciatura di pilastri in cemento armato.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.10",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Incamiciatura di pilastri in acciaio.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.11",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Rinforzo di travi.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.12",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Rinforzo di nodi trave-pilastro.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.13",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Rinforzo di pareti in muratura.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.14",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Rinforzo con FRP.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.15",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Rinforzo con FRCM.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.16",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Rinforzo con CRM.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.17",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Rinforzo con piastre metalliche.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.18",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Rinforzo di solai esistenti.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.19",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Realizzazione di soletta collaborante.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.20",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Sostituzione di solai.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.21",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Realizzazione di nuovi fori nei solai.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.22",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Realizzazione di vani scala.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.23",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Realizzazione di vani ascensore.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.24",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Consolidamento di balconi.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.25",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Consolidamento di cornicioni.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.26",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Consolidamento di archi e volte.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.27",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Inserimento di catene metalliche.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.28",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Inserimento di tiranti.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.29",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Realizzazione di cordoli.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.30",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Sottomurazioni.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.31",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Sottofondazioni.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.32",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Consolidamento delle fondazioni.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.33",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Ampliamenti in aderenza.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.34",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Ampliamenti con nuovi corpi strutturali.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.35",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Sopraelevazioni.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.36",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Recupero dei sottotetti.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.37",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Cambio di destinazione d’uso con aumento dei carichi.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.38",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Demolizione parziale di edifici.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.39",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Demolizione e ricostruzione.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.40",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Interventi locali.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.41",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Miglioramento sismico.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.42",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Adeguamento sismico.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C16.43",
+   "categoria": 16,
+   "nome_categoria": "Interventi su edifici esistenti",
+   "voce": "Valutazione della sicurezza di edifici esistenti.",
+   "fase": 4,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.01",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Calcolo della capacità portante.",
+   "fase": 2,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.02",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Calcolo dei cedimenti immediati.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.03",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Calcolo dei cedimenti di consolidazione.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.04",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Calcolo dei cedimenti differenziali.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.05",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Verifica di fondazioni su terreni stratificati.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.06",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Verifica di fondazioni su terreni di riporto.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.07",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Verifica dei terreni espansivi.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.08",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Verifica di terreni compressibili.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.09",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Verifica di terreni soggetti a liquefazione.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.10",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Verifica delle fondazioni con falda superficiale.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.11",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Verifica degli scavi in presenza di falda.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.12",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Verifica del sifonamento e del sollevamento idraulico.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.13",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Stabilità di scarpate nel lotto edificabile.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.14",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Stabilità dei terrapieni.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.15",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Stabilità di edifici in prossimità di pendii.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.16",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Interazione tra fondazioni esistenti e nuove.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.17",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Interazione terreno-struttura.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.18",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Verifica di edifici con fondazioni a quote diverse.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.19",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Verifiche dei cedimenti indotti da nuovi scavi.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.20",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Verifica degli effetti degli scavi sulle costruzioni confinanti.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.21",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Verifica di fondazioni su terreni migliorati.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C17.22",
+   "categoria": 17,
+   "nome_categoria": "Problemi geotecnici e situazioni particolari del terreno",
+   "voce": "Interventi di consolidamento del terreno.",
+   "fase": 6,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.01",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Analisi statica lineare.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.02",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Analisi dinamica modale con spettro di risposta.",
+   "fase": 3,
+   "stato": "parziale",
+   "modulo": "ntcfem/calcolo.py"
+  },
+  {
+   "id": "C18.03",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Analisi statica non lineare (pushover).",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.04",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Analisi dinamica non lineare (time history).",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.05",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica della regolarità in pianta.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.06",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica della regolarità in altezza.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.07",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Calcolo del periodo proprio di vibrazione.",
+   "fase": 3,
+   "stato": "fatto",
+   "modulo": "ntcfem/calcolo.py"
+  },
+  {
+   "id": "C18.08",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica degli spostamenti interpiano.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.09",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica degli effetti del secondo ordine P-Δ.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.10",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica della torsione globale.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.11",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica della torsione accidentale.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.12",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica dei piani soffici.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.13",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica dei piani deboli.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.14",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica dei pilastri corti.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.15",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica dei nodi strutturali.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.16",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Gerarchia delle resistenze.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.17",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica degli elementi dissipativi.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.18",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica degli elementi non dissipativi.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.19",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica dei collegamenti antisismici.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.20",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica delle fondazioni in condizioni sismiche.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.21",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica degli impalcati come diaframmi.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.22",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica degli elementi secondari e non strutturali.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.23",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica del martellamento tra edifici adiacenti.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.24",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica dei giunti sismici.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.25",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Calcolo della capacità sismica degli edifici esistenti.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.26",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Valutazione della vulnerabilità sismica.",
+   "fase": 3,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.27",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica di edifici con isolamento alla base.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C18.28",
+   "categoria": 18,
+   "nome_categoria": "Analisi sismiche e verifiche globali degli edifici",
+   "voce": "Verifica di sistemi di dissipazione sismica.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.01",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Puntellamento di solai.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.02",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Puntellamento di travi.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.03",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Puntellamento di balconi.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.04",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Puntellamento di murature.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.05",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Puntellamento di archi e volte.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.06",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Sostegni provvisori per demolizioni.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.07",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Telai provvisori per aperture in pareti.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.08",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Strutture temporanee di sostegno.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.09",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Verifiche di stabilità durante il montaggio.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.10",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Verifica di strutture in fase di getto.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.11",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Verifica di casserature.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.12",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Verifica di centinature.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.13",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Verifica di opere provvisionali di sostegno.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.14",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Verifica di ponteggi e ancoraggi, nei casi previsti.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.15",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Verifica di piattaforme provvisorie.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.16",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Verifica dei solai per deposito temporaneo di materiali.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.17",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Verifica delle strutture per carichi di macchinari di cantiere.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.18",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Sequenze di demolizione e stabilità transitoria.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C20.19",
+   "categoria": 20,
+   "nome_categoria": "Strutture provvisorie e situazioni di cantiere",
+   "voce": "Sequenze di costruzione e trasferimento progressivo dei carichi.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.01",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Verifica strutturale di facciate continue.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.02",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Verifica di vetrate strutturali.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.03",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Verifica di coperture in vetro.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.04",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Verifica di pavimenti in vetro.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.05",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Verifica delle sottostrutture per rivestimenti lapidei.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.06",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Verifica dei fissaggi di elementi prefabbricati di facciata.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.07",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Strutture per giardini pensili.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.08",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Strutture per vasche idromassaggio su terrazzi.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.09",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Strutture per impianti sportivi privati.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.10",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Tribune di piccole strutture sportive.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.11",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Strutture di sostegno di controsoffitti pesanti.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.12",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Strutture di sostegno di elementi architettonici sospesi.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.13",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Strutture con sbalzi importanti.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.14",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Edifici con pilastri in falso.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.15",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Edifici con travi di trasferimento.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.16",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Edifici con forti irregolarità geometriche.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.17",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Edifici realizzati in aderenza ad altri fabbricati.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.18",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Edifici con piani sfalsati.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  },
+  {
+   "id": "C21.19",
+   "categoria": 21,
+   "nome_categoria": "Altre situazioni specialistiche in edilizia",
+   "voce": "Edifici con fondazioni su terreni a diversa rigidezza.",
+   "fase": 7,
+   "stato": "da_fare",
+   "modulo": null
+  }
+ ]
+}

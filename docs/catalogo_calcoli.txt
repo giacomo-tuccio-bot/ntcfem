@@ -1,0 +1,601 @@
+Catalogo completo dei calcoli strutturali per l’edilizia civile
+
+Ti preparo un elenco organizzato come una vera libreria di calcolo per uno studio di ingegneria strutturale, comprendendo edifici residenziali, condomini, ville, fabbricati commerciali, uffici, autorimesse, edifici scolastici e relative pertinenze.
+
+Non mi limiterò agli elementi classici (pilastri, travi, fondazioni), ma includerò anche opere particolari, strutture esistenti, verifiche locali, collegamenti e situazioni che possono presentarsi in una ristrutturazione.
+
+La classificazione prende come riferimento le aree della progettazione disciplinate dalle NTC 2018 e dalla Circolare applicativa n. 7/2019, senza voler sostituire le verifiche normative richieste per ogni singolo progetto. Gazzetta Ufficiale +1
+
+1. Strutture in cemento armato
+
+Elementi strutturali nuovi, gettati in opera o prefabbricati
+
+* Pilastri rettangolari e quadrati.
+* Pilastri circolari.
+* Pilastri a sezione irregolare (L, T, croce).
+* Pilastri snelli.
+* Pilastri inclinati.
+* Pilastri corti soggetti a taglio.
+* Travi semplicemente appoggiate.
+* Travi continue su più appoggi.
+* Travi a sbalzo.
+* Travi a spessore di solaio.
+* Travi emergenti e ribassate.
+* Travi a sezione T o L.
+* Travi inclinate.
+* Travi curve.
+* Travi parete (travi alte).
+* Travi di collegamento tra pareti.
+* Mensole corte e selle Gerber.
+* Setti strutturali in cemento armato.
+* Pareti di taglio antisismiche.
+* Nuclei rigidi di scale e ascensori.
+* Nodi trave-pilastro interni, esterni e d’angolo.
+* Piastre e solette in cemento armato.
+* Piastre a sbalzo.
+* Solai a fungo senza travi.
+* Capitelli e zone rinforzate contro il punzonamento.
+* Elementi prefabbricati e relativi collegamenti.
+* Elementi in cemento armato precompresso, quando impiegati nell’edilizia.
+
+2. Solai e impalcati
+
+* Solai laterocementizi.
+* Solai con travetti prefabbricati e pignatte.
+* Solai completamente in opera.
+* Solai con lastre predalles.
+* Solai alveolari prefabbricati.
+* Solai pieni in cemento armato.
+* Solai a piastra bidirezionale.
+* Solai nervati e a cassettoni.
+* Solai a sbalzo.
+* Solai con travi in acciaio e tavelloni.
+* Solai con putrelle metalliche.
+* Solai con lamiera grecata collaborante.
+* Solai in legno con travi e tavolato.
+* Solai in legno con pannelli CLT.
+* Solai misti legno-calcestruzzo.
+* Solai misti acciaio-calcestruzzo.
+* Solai con aperture e forometrie.
+* Solai con carichi concentrati.
+* Solai per autorimesse.
+* Solai per archivi e depositi.
+* Solai per terrazze praticabili.
+* Solai per coperture non praticabili.
+* Verifica di solai esistenti per cambio di destinazione d’uso.
+* Verifica e rinforzo di solai per nuovi carichi.
+
+3. Fondazioni superficiali
+
+* Plinti isolati centrati.
+* Plinti eccentrici.
+* Plinti collegati con travi.
+* Plinti combinati per più pilastri.
+* Plinti di confine.
+* Fondazioni continue sotto murature.
+* Travi rovesce.
+* Graticci di travi rovesce.
+* Platee di fondazione.
+* Platee nervate.
+* Platee alleggerite.
+* Platee a spessore variabile.
+* Platee con pilastri direttamente impostati.
+* Platee con setti strutturali.
+* Fondazioni a gradoni.
+* Fondazioni su terreno inclinato.
+* Fondazioni a quote differenti.
+* Fondazioni eccentriche in prossimità di confini.
+* Fondazioni su terreni di riporto, previa caratterizzazione e verifica dell’idoneità geotecnica.
+* Fondazioni su terreni migliorati.
+* Fondazioni in presenza di falda.
+* Fondazioni adiacenti ad edifici esistenti.
+* Fondazioni di piccoli manufatti, recinzioni e strutture pertinenziali.
+
+4. Fondazioni profonde
+
+* Pali trivellati.
+* Pali a elica continua (CFA).
+* Pali battuti.
+* Pali prefabbricati.
+* Micropali.
+* Pali inclinati.
+* Pali soggetti a compressione.
+* Pali soggetti a trazione.
+* Pali soggetti a carichi orizzontali.
+* Pali soggetti a momento flettente.
+* Pali isolati.
+* Gruppi di pali.
+* Plinti su pali.
+* Travi di fondazione su pali.
+* Platee su pali (piled raft).
+* Plinti su micropali.
+* Fondazioni miste superficiali-profonde.
+* Pali in presenza di attrito negativo.
+* Pali soggetti a cedimenti del terreno.
+* Verifiche degli effetti di gruppo.
+* Verifica dei cedimenti di fondazioni profonde.
+* Verifiche di interazione palo-terreno-struttura.
+* Collegamenti testa palo-plinto o platea.
+* Sottofondazioni mediante micropali.
+
+5. Opere di sostegno e strutture controterra
+
+* Muri di sostegno a gravità.
+* Muri di sostegno in cemento armato a mensola.
+* Muri di sostegno a contrafforti.
+* Muri di sostegno a semigravità.
+* Muri di sostegno prefabbricati.
+* Muri di sostegno in blocchi o muratura.
+* Muri di sostegno in gabbioni.
+* Muri di sostegno in terra rinforzata.
+* Muri per contenimento di giardini e terrazzamenti.
+* Muri controterra di piani interrati.
+* Pareti perimetrali di scantinati.
+* Pareti controterra vincolate agli impalcati.
+* Paratie di pali.
+* Paratie di micropali.
+* Paratie con ancoraggi.
+* Diaframmi in cemento armato.
+* Berlinesi di sostegno.
+* Opere di sostegno provvisorie degli scavi.
+* Opere con tiranti e ancoraggi.
+* Verifica della stabilità globale muro-terreno.
+* Verifiche di scorrimento, ribaltamento e capacità portante.
+* Verifiche idrauliche e delle sovrappressioni interstiziali.
+
+6. Strutture in acciaio
+
+* Pilastri in profilati HEA, HEB, HEM.
+* Pilastri in profili tubolari circolari.
+* Pilastri in profili tubolari quadrati e rettangolari.
+* Pilastri composti.
+* Travi IPE, HEA, HEB.
+* Travi reticolari.
+* Travi alveolari.
+* Travi scatolari.
+* Travi curve.
+* Travi a sbalzo.
+* Travi a sezione variabile.
+* Telai semplici.
+* Telai rigidi.
+* Telai controventati.
+* Portali metallici.
+* Controventi a X, V, K e diagonali.
+* Capriate metalliche.
+* Strutture spaziali reticolari.
+* Impalcati metallici.
+* Soppalchi metallici.
+* Pensiline metalliche.
+* Tettoie metalliche.
+* Strutture tubolari.
+* Strutture con profili formati a freddo.
+* Elementi soggetti a instabilità flessionale, torsionale e flesso-torsionale.
+* Strutture leggere modulari e prefabbricate.
+
+7. Unioni e collegamenti metallici
+
+* Giunti trave-pilastro.
+* Giunti trave-trave.
+* Collegamenti rigidi.
+* Collegamenti incernierati.
+* Collegamenti semirigidi.
+* Collegamenti bullonati.
+* Collegamenti saldati.
+* Giunti flangiati.
+* Giunti con piastre di estremità.
+* Giunti con squadrette.
+* Piastre di base dei pilastri.
+* Piastre di base con tirafondi.
+* Tirafondi a trazione e taglio.
+* Piastre di ripartizione.
+* Collegamenti di controventi.
+* Verifica delle saldature a cordone d’angolo.
+* Verifica delle saldature a piena penetrazione.
+* Collegamenti con bulloni precaricati.
+* Verifica dello scorrimento delle unioni.
+* Verifica delle piastre per rifollamento e strappo.
+* Ancoraggi dell’acciaio a strutture in cemento armato.
+
+8. Strutture in legno
+
+* Travi in legno massiccio.
+* Travi in legno lamellare.
+* Travi composte.
+* Travi curve in legno lamellare.
+* Pilastri in legno.
+* Capriate tradizionali in legno.
+* Capriate in legno lamellare.
+* Arcarecci.
+* Puntoni.
+* Catene e tiranti.
+* Controventature.
+* Strutture a telaio in legno.
+* Pareti portanti in CLT.
+* Solai in CLT.
+* Coperture in CLT.
+* Strutture a pannelli X-Lam.
+* Case prefabbricate in legno.
+* Soppalchi in legno.
+* Pergolati in legno.
+* Tettoie in legno.
+* Pensiline in legno.
+* Collegamenti con viti strutturali.
+* Collegamenti con bulloni e spinotti.
+* Connessioni con piastre metalliche.
+* Scarpe metalliche per travi.
+* Hold-down e ancoraggi antisismici.
+* Verifica della compressione perpendicolare alla fibratura.
+* Verifica di instabilità, deformazione e vibrazione.
+* Verifica della durabilità e delle condizioni di umidità.
+
+9. Strutture in muratura
+
+* Pareti portanti in muratura ordinaria.
+* Pareti in muratura armata.
+* Pareti in laterizio portante.
+* Pareti in blocchi di calcestruzzo.
+* Pareti in pietrame.
+* Murature miste.
+* Pareti con aperture.
+* Maschi murari.
+* Fasce di piano.
+* Architravi.
+* Archi in muratura.
+* Volte a botte.
+* Volte a crociera.
+* Volte in mattoni.
+* Pilastri in muratura.
+* Setti murari.
+* Cantonali.
+* Cordoli in cemento armato.
+* Cordoli in acciaio.
+* Cerchiature di aperture.
+* Verifiche fuori piano delle pareti.
+* Verifiche nel piano delle pareti.
+* Verifica dei meccanismi locali di ribaltamento.
+* Verifica delle spinte di archi e volte.
+* Verifica delle strutture murarie per carichi concentrati.
+
+10. Strutture miste e sistemi costruttivi speciali
+
+* Travi composte acciaio-calcestruzzo.
+* Pilastri composti acciaio-calcestruzzo.
+* Solai collaboranti acciaio-calcestruzzo.
+* Travi legno-calcestruzzo.
+* Solai legno-calcestruzzo.
+* Connessioni per solai collaboranti.
+* Strutture miste muratura e cemento armato.
+* Strutture miste acciaio-legno.
+* Telai in acciaio con tamponamenti collaboranti, quando previsti nel modello.
+* Sistemi prefabbricati in cemento armato.
+* Collegamenti tra elementi prefabbricati.
+* Pannelli portanti prefabbricati.
+* Moduli tridimensionali prefabbricati.
+* Strutture con elementi precompressi.
+* Strutture con materiali compositi FRP o FRCM, nei rispettivi ambiti di applicazione.
+
+11. Scale e rampe
+
+Una categoria particolarmente ampia, perché geometria, materiale e vincoli cambiano completamente lo schema statico.
+
+* Scale in cemento armato a soletta rampante.
+* Scale in cemento armato con travi laterali.
+* Scale con gradini a sbalzo.
+* Scale con gradini incastrati nella parete.
+* Scale a chiocciola in cemento armato.
+* Scale a chiocciola in acciaio.
+* Scale a chiocciola in legno.
+* Scale elicoidali.
+* Scale circolari.
+* Scale con cosciale centrale.
+* Scale con due cosciali laterali.
+* Scale in acciaio con gradini in legno.
+* Scale in acciaio con gradini in vetro.
+* Scale totalmente in legno.
+* Scale sospese con tiranti.
+* Scale a sbalzo con struttura nascosta.
+* Scale prefabbricate.
+* Scale esterne di sicurezza.
+* Scale con pianerottoli sospesi.
+* Scale a doppia rampa.
+* Scale a tre rampe.
+* Scale autoportanti.
+* Scale con collegamenti antisismici.
+* Rampe pedonali.
+* Rampe carrabili in cemento armato.
+* Rampe metalliche.
+* Rampe curve per autorimesse.
+
+12. Balconi, terrazze, coperture e aggetti
+
+* Balconi in cemento armato a sbalzo.
+* Balconi su travi sporgenti.
+* Balconi con pilastri esterni.
+* Balconi metallici.
+* Balconi prefabbricati.
+* Balconi sospesi con tiranti.
+* Terrazze strutturali.
+* Verande sopraelevate.
+* Logge.
+* Pensiline in cemento armato.
+* Pensiline in acciaio.
+* Pensiline in legno.
+* Pensiline sospese.
+* Tettoie su pilastri.
+* Tettoie fissate a parete.
+* Pergolati.
+* Pergole bioclimatiche.
+* Coperture piane.
+* Coperture inclinate a una o più falde.
+* Coperture curve.
+* Coperture con capriate.
+* Coperture leggere con pannelli sandwich.
+* Coperture verdi.
+* Coperture con impianti fotovoltaici.
+* Coperture con macchine e impianti tecnologici.
+* Aggetti di gronda.
+* Cornicioni e cornicioni storici.
+
+13. Elementi accessori e pertinenziali
+
+* Parapetti in cemento armato.
+* Parapetti metallici.
+* Parapetti in vetro strutturale.
+* Ringhiere metalliche.
+* Ringhiere in legno.
+* Balaustre.
+* Recinzioni in muratura.
+* Recinzioni in cemento armato.
+* Recinzioni metalliche.
+* Muri di confine.
+* Pilastrini per cancelli.
+* Cancelli carrabili pesanti.
+* Cancelli scorrevoli.
+* Portoni e telai di sostegno.
+* Carport.
+* Gazebo.
+* Verande esterne.
+* Strutture per tende da sole.
+* Strutture per tettoie fotovoltaiche.
+* Basamenti per macchinari.
+* Basamenti per unità esterne di climatizzazione.
+* Basamenti per serbatoi.
+* Supporti per pannelli solari.
+* Strutture per insegne.
+* Strutture di sostegno per facciate e rivestimenti.
+* Elementi di ancoraggio delle facciate ventilate.
+
+14. Piscine, vasche e serbatoi
+
+* Piscine interrate in cemento armato.
+* Piscine fuori terra.
+* Piscine su terrazza.
+* Piscine su solai.
+* Piscine a sfioro.
+* Piscine sospese.
+* Piscine prefabbricate con struttura di supporto.
+* Vasche di accumulo acqua.
+* Vasche antincendio.
+* Cisterne interrate.
+* Serbatoi sopraelevati.
+* Serbatoi su strutture metalliche.
+* Serbatoi in cemento armato.
+* Vasche controterra.
+* Vasche soggette a spinta idrostatica.
+* Verifica del galleggiamento di vasche interrate.
+* Verifica della fessurazione per la tenuta dei liquidi.
+* Verifiche sismiche dei serbatoi e dei relativi supporti.
+
+15. Ascensori e strutture tecnologiche
+
+* Vani ascensore in cemento armato.
+* Vani ascensore metallici.
+* Castelletti ascensore esterni.
+* Strutture per piattaforme elevatrici.
+* Fondazioni dei castelletti ascensore.
+* Fosse ascensore.
+* Travature per sostegno macchinari ascensore.
+* Ancoraggi delle guide ascensore.
+* Strutture per montacarichi.
+* Passerelle interne di manutenzione.
+* Strutture di supporto per impianti di ventilazione.
+* Strutture per unità di trattamento aria.
+* Supporti per impianti fotovoltaici.
+* Strutture di sostegno per canne fumarie.
+* Strutture per antenne su copertura.
+* Strutture per serbatoi e apparecchiature impiantistiche.
+
+16. Interventi su edifici esistenti
+
+Una delle categorie più importanti nell’edilizia civile.
+
+* Apertura di vani in muratura portante.
+* Allargamento di porte e finestre.
+* Realizzazione di cerchiature metalliche.
+* Cerchiature in cemento armato.
+* Chiusura di aperture strutturali.
+* Demolizione di pareti portanti.
+* Sostituzione di pareti portanti con telai.
+* Rinforzo di pilastri.
+* Incamiciatura di pilastri in cemento armato.
+* Incamiciatura di pilastri in acciaio.
+* Rinforzo di travi.
+* Rinforzo di nodi trave-pilastro.
+* Rinforzo di pareti in muratura.
+* Rinforzo con FRP.
+* Rinforzo con FRCM.
+* Rinforzo con CRM.
+* Rinforzo con piastre metalliche.
+* Rinforzo di solai esistenti.
+* Realizzazione di soletta collaborante.
+* Sostituzione di solai.
+* Realizzazione di nuovi fori nei solai.
+* Realizzazione di vani scala.
+* Realizzazione di vani ascensore.
+* Consolidamento di balconi.
+* Consolidamento di cornicioni.
+* Consolidamento di archi e volte.
+* Inserimento di catene metalliche.
+* Inserimento di tiranti.
+* Realizzazione di cordoli.
+* Sottomurazioni.
+* Sottofondazioni.
+* Consolidamento delle fondazioni.
+* Ampliamenti in aderenza.
+* Ampliamenti con nuovi corpi strutturali.
+* Sopraelevazioni.
+* Recupero dei sottotetti.
+* Cambio di destinazione d’uso con aumento dei carichi.
+* Demolizione parziale di edifici.
+* Demolizione e ricostruzione.
+* Interventi locali.
+* Miglioramento sismico.
+* Adeguamento sismico.
+* Valutazione della sicurezza di edifici esistenti.
+
+17. Problemi geotecnici e situazioni particolari del terreno
+
+* Calcolo della capacità portante.
+* Calcolo dei cedimenti immediati.
+* Calcolo dei cedimenti di consolidazione.
+* Calcolo dei cedimenti differenziali.
+* Verifica di fondazioni su terreni stratificati.
+* Verifica di fondazioni su terreni di riporto.
+* Verifica dei terreni espansivi.
+* Verifica di terreni compressibili.
+* Verifica di terreni soggetti a liquefazione.
+* Verifica delle fondazioni con falda superficiale.
+* Verifica degli scavi in presenza di falda.
+* Verifica del sifonamento e del sollevamento idraulico.
+* Stabilità di scarpate nel lotto edificabile.
+* Stabilità dei terrapieni.
+* Stabilità di edifici in prossimità di pendii.
+* Interazione tra fondazioni esistenti e nuove.
+* Interazione terreno-struttura.
+* Verifica di edifici con fondazioni a quote diverse.
+* Verifiche dei cedimenti indotti da nuovi scavi.
+* Verifica degli effetti degli scavi sulle costruzioni confinanti.
+* Verifica di fondazioni su terreni migliorati.
+* Interventi di consolidamento del terreno.
+
+18. Analisi sismiche e verifiche globali degli edifici
+
+* Analisi statica lineare.
+* Analisi dinamica modale con spettro di risposta.
+* Analisi statica non lineare (pushover).
+* Analisi dinamica non lineare (time history).
+* Verifica della regolarità in pianta.
+* Verifica della regolarità in altezza.
+* Calcolo del periodo proprio di vibrazione.
+* Verifica degli spostamenti interpiano.
+* Verifica degli effetti del secondo ordine P-Δ.
+* Verifica della torsione globale.
+* Verifica della torsione accidentale.
+* Verifica dei piani soffici.
+* Verifica dei piani deboli.
+* Verifica dei pilastri corti.
+* Verifica dei nodi strutturali.
+* Gerarchia delle resistenze.
+* Verifica degli elementi dissipativi.
+* Verifica degli elementi non dissipativi.
+* Verifica dei collegamenti antisismici.
+* Verifica delle fondazioni in condizioni sismiche.
+* Verifica degli impalcati come diaframmi.
+* Verifica degli elementi secondari e non strutturali.
+* Verifica del martellamento tra edifici adiacenti.
+* Verifica dei giunti sismici.
+* Calcolo della capacità sismica degli edifici esistenti.
+* Valutazione della vulnerabilità sismica.
+* Verifica di edifici con isolamento alla base.
+* Verifica di sistemi di dissipazione sismica.
+
+19. Tipologie di verifica degli elementi strutturali
+
+Queste verifiche si applicano, secondo i casi, a numerosi elementi dei gruppi precedenti.
+
+Tipologia	Calcolo o verifica
+Compressione	Sforzo normale di compressione
+Trazione	Sforzo normale di trazione
+Flessione	Flessione semplice e deviata
+Pressoflessione	Sforzo normale e momento combinati
+Taglio	Resistenza a taglio
+Torsione	Resistenza a torsione
+Sollecitazioni combinate	Interazioni N-M-V-T
+Instabilità	Carico critico, instabilità locale e globale
+Instabilità laterale	Svergolamento delle travi
+Deformabilità	Frecce e spostamenti
+Vibrazioni	Frequenze proprie, accelerazioni, comfort
+Fessurazione	Apertura delle fessure nel c.a.
+Punzonamento	Resistenza di piastre e plinti
+Aderenza	Ancoraggio e sovrapposizione delle armature
+Connessioni	Resistenza di unioni e ancoraggi
+Fatica	Effetti di azioni cicliche, quando pertinenti
+Fuoco	Resistenza strutturale in situazione d’incendio
+Robustezza	Risposta a danneggiamenti localizzati
+Sisma	Resistenza, duttilità e spostamenti
+Geotecnica	Capacità portante e cedimenti
+Stabilità globale	Stabilità di opere e complessi terreno-struttura
+SLE	Stati limite di esercizio
+SLU	Stati limite ultimi
+
+20. Strutture provvisorie e situazioni di cantiere
+
+* Puntellamento di solai.
+* Puntellamento di travi.
+* Puntellamento di balconi.
+* Puntellamento di murature.
+* Puntellamento di archi e volte.
+* Sostegni provvisori per demolizioni.
+* Telai provvisori per aperture in pareti.
+* Strutture temporanee di sostegno.
+* Verifiche di stabilità durante il montaggio.
+* Verifica di strutture in fase di getto.
+* Verifica di casserature.
+* Verifica di centinature.
+* Verifica di opere provvisionali di sostegno.
+* Verifica di ponteggi e ancoraggi, nei casi previsti.
+* Verifica di piattaforme provvisorie.
+* Verifica dei solai per deposito temporaneo di materiali.
+* Verifica delle strutture per carichi di macchinari di cantiere.
+* Sequenze di demolizione e stabilità transitoria.
+* Sequenze di costruzione e trasferimento progressivo dei carichi.
+
+21. Altre situazioni specialistiche in edilizia
+
+* Verifica strutturale di facciate continue.
+* Verifica di vetrate strutturali.
+* Verifica di coperture in vetro.
+* Verifica di pavimenti in vetro.
+* Verifica delle sottostrutture per rivestimenti lapidei.
+* Verifica dei fissaggi di elementi prefabbricati di facciata.
+* Strutture per giardini pensili.
+* Strutture per vasche idromassaggio su terrazzi.
+* Strutture per impianti sportivi privati.
+* Tribune di piccole strutture sportive.
+* Strutture di sostegno di controsoffitti pesanti.
+* Strutture di sostegno di elementi architettonici sospesi.
+* Strutture con sbalzi importanti.
+* Edifici con pilastri in falso.
+* Edifici con travi di trasferimento.
+* Edifici con forti irregolarità geometriche.
+* Edifici realizzati in aderenza ad altri fabbricati.
+* Edifici con piani sfalsati.
+* Edifici con fondazioni su terreni a diversa rigidezza.
+
+Come organizzerei tutte queste attività per uno studio strutturale
+
+Le categorie precedenti si possono ricondurre a sei grandi famiglie di calcolo:
+
+Famiglia	Oggetto principale
+1. Elementi singoli	Pilastri, travi, solai, scale, mensole
+2. Strutture complete	Telai, edifici, coperture, sistemi tridimensionali
+3. Fondazioni e geotecnica	Plinti, platee, pali, muri, terreno
+4. Collegamenti	Nodi, bulloni, saldature, ancoraggi, connessioni
+5. Strutture esistenti	Consolidamenti, aperture, rinforzi, sopraelevazioni
+6. Analisi e verifiche	Sisma, stabilità, deformazioni, resistenza, incendio
+
+Un aspetto importante: non bisogna confondere il tipo di elemento con il tipo di calcolo. Ad esempio, una scala a chiocciola metallica è un elemento, ma può richiedere un’analisi spaziale, verifiche di flessione e torsione, vibrazioni, stabilità del montante, collegamenti saldati, piastre e ancoraggi alla struttura esistente.
+
+Per questo, se l’obiettivo è costruire una libreria completa di calcolo strutturale, la suddividerei in moduli indipendenti e combinabili: ogni elemento avrebbe la propria geometria, materiale, schema statico, carichi, verifiche e relazione di calcolo, distinguendo i calcoli autonomi dalle verifiche che richiedono il modello globale dell’edificio.
+
+In questo modo il catalogo può diventare anche la base per un software di calcolo strutturale dedicato all’edilizia civile.

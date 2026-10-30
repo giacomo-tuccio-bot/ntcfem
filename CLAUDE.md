@@ -24,6 +24,11 @@ e Circolare n. 7/2019. Prototipo: i risultati vanno sempre confrontati con Edilu
 - `ntcfem/claude_bridge.py`  chiamata a `claude -p`
 - `ntcfem/aggiornamenti.py`  aggiornamento da GitHub (git pull)
 
+## Catalogo dei calcoli
+- Elenco completo: `docs/catalogo_calcoli.txt`; stato e fasi: `dati/catalogo.json`
+- Segui `docs/ROADMAP.md` per l'ordine di lavoro e le regole di ogni nuovo modulo
+- Verifiche di sezione riusabili in `ntcfem/norme/`; nuovi elementi in `ntcfem/elementi/`
+
 ## Prossimi passi
 1. Spettro dai parametri del sito (reticolo NTC per lat/long, interpolazione TR)
 2. Analisi dei carichi verticali e combinazioni SLU/SLE
