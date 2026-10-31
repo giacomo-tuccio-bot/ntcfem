@@ -23,7 +23,8 @@ e Circolare n. 7/2019. Prototipo: i risultati vanno sempre confrontati con Edilu
 - `ntcfem/calcolo.py`   esecuzione completa e output
 - `ntcfem/claude_bridge.py`  chiamata a `claude -p`
 - `ntcfem/aggiornamenti.py`  aggiornamento da GitHub (git pull)
-- `ntcfem/web.py` + `api/*.py`  API per Vercel; `web/index.html` pagina; `vercel.json` configurazione
+- `ntcfem/server.py`  app WSGI unica (pagina + /api/calcola, /api/ottimizza), entrypoint Vercel in `pyproject.toml`
+- `ntcfem/web.py`  funzioni chiamate dalle API; `web/index.html` pagina
 - `strumenti/server_locale.py`  stessa app in locale (porta 8000)
 - Online le dipendenze sono solo quelle di `requirements.txt`: tenerle leggere
 

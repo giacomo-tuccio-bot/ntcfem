@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.1 - 2026-10-31
+- Correzione deploy Vercel: unica app WSGI `ntcfem/server.py` (pagina + API), entrypoint in pyproject.toml
+- Rimossi api/ e vercel.json; server locale con wsgiref
+
 ## 0.4.0 - 2026-10-31
 - Versione web per Vercel: pagina web/index.html (condominio parametrico, vista 3D, calcolo, ottimizzazione trave)
 - API Python: /api/calcola e /api/ottimizza (vercel.json)

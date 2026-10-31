@@ -1,0 +1,9 @@
+[project]
+name = "ntcfem"
+version = "0.4.1"
+description = "Calcolo strutturale NTC 2018 con ottimizzazione e collegamento a Claude"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[tool.vercel]
+entrypoint = "ntcfem.server:app"
