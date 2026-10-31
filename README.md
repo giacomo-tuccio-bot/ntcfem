@@ -6,7 +6,7 @@ con controllo dei risultati tramite Claude Code.
 > Strumento in sviluppo, non validato: i risultati vanno confrontati con un software
 > commerciale (es. Edilus). La responsabilita' del calcolo resta del progettista.
 
-## Cosa fa oggi (v0.3.0)
+## Cosa fa oggi (v0.4.0)
 - Telaio 3D con impalcati rigidi, masse G1+G2+psi2*Q
 - Analisi modale (periodi, masse partecipanti)
 - Spettro di progetto SLV NTC 2018 e combinazione CQC
@@ -14,11 +14,18 @@ con controllo dei risultati tramite Claude Code.
 - Controllo con Claude Code (`--claude`)
 - Aggiornamento automatico dal repository
 
+## Online (Vercel)
+1. Su vercel.com: Add New > Project > importa il repo `ntcfem` da GitHub.
+2. Framework preset: **Other**. Lasciare il resto com'e' (legge `vercel.json`) e premere Deploy.
+3. Ogni push su `main` aggiorna il sito da solo.
+
+In locale la stessa pagina: `python strumenti/server_locale.py` e apri http://localhost:8000
+
 ## Installazione
 ```
 git clone <indirizzo-del-repo> ntcfem
 cd ntcfem
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 ```
 Per il controllo con Claude serve anche Claude Code installato e collegato al tuo account.
 

@@ -1,0 +1,11 @@
+{
+  "buildCommand": "",
+  "outputDirectory": "web",
+  "functions": {
+    "api/*.py": {
+      "maxDuration": 60,
+      "includeFiles": "{ntcfem/**,dati/**,VERSION}",
+      "excludeFiles": "{tests/**,docs/**,esempi/**,strumenti/**,output/**}"
+    }
+  }
+}

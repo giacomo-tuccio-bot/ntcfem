@@ -4,7 +4,6 @@ Elemento trave di Eulero-Bernoulli a 12 gdl, deformabilita' a taglio trascurata.
 Gdl per nodo: ux, uy, uz, rx, ry, rz.
 """
 import numpy as np
-from scipy.linalg import eigh
 
 from .modello import proprieta_rettangolo
 
@@ -109,7 +108,11 @@ def condensa_impalcati(mod, K, masse):
 
 
 def analisi_modale(Kc, Mc):
-    w2, Phi = eigh(Kc, Mc)          # Phi normalizzati rispetto alle masse
+    # Problema generalizzato K phi = w2 M phi con M diagonale: si riduce a uno standard
+    # con M^-1/2 K M^-1/2 (solo numpy, cosi' gira anche online senza scipy).
+    s = 1.0 / np.sqrt(np.diag(Mc))
+    w2, V = np.linalg.eigh(s[:, None] * Kc * s[None, :])
+    Phi = s[:, None] * V            # Phi normalizzati rispetto alle masse
     omega = np.sqrt(w2)
     n = len(omega)
     rX = np.tile([1.0, 0, 0], n // 3)

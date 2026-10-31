@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.0 - 2026-10-31
+- Versione web per Vercel: pagina web/index.html (condominio parametrico, vista 3D, calcolo, ottimizzazione trave)
+- API Python: /api/calcola e /api/ottimizza (vercel.json)
+- Server locale di sviluppo: strumenti/server_locale.py
+- Analisi modale solo con numpy (scipy non piu' necessario); dipendenze di test in requirements-dev.txt
+
 ## 0.3.0 - 2026-10-31
 - Ottimizzazione armature longitudinali a peso minimo (ntcfem/ottimizzazione/armature.py)
 - Confronto sezioni alternative a costo minimo con prezzario modificabile (ottimizzazione/sezioni.py)

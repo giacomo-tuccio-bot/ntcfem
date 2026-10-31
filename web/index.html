@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ntcfem · calcolo strutturale NTC 2018</title>
+<style>
+  :root{--bg:#f4f5f2;--pan:#fff;--ink:#1d2321;--mut:#69716d;--lin:#dfe2dc;--acc:#c2410c;--acc2:#0f5c4f;--ok:#15803d;--ko:#b91c1c}
+  *{box-sizing:border-box}
+  body{margin:0;font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}
+  header{display:flex;align-items:baseline;gap:12px;padding:12px 18px;border-bottom:1px solid var(--lin);background:var(--pan)}
+  header b{font-size:17px;letter-spacing:.3px}
+  header span{color:var(--mut);font-size:12px}
+  main{display:grid;grid-template-columns:340px 1fr;gap:14px;padding:14px;max-width:1500px;margin:auto}
+  @media(max-width:900px){main{grid-template-columns:1fr}}
+  .pan{background:var(--pan);border:1px solid var(--lin);border-radius:10px;padding:14px}
+  h2{font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:var(--mut);margin:16px 0 8px}
+  h2:first-child{margin-top:0}
+  .g{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  label{display:flex;flex-direction:column;font-size:12px;color:var(--mut);gap:3px}
+  input,select{font:inherit;color:var(--ink);padding:6px 8px;border:1px solid var(--lin);border-radius:6px;background:#fbfbfa;width:100%}
+  input:focus,select:focus{outline:2px solid #0f5c4f33;border-color:var(--acc2)}
+  .full{grid-column:1/-1}
+  button{font:inherit;font-weight:600;border:0;border-radius:7px;padding:9px 14px;cursor:pointer}
+  .pri{background:var(--acc);color:#fff;width:100%;margin-top:14px;font-size:15px}
+  .sec{background:#e9ece7;color:var(--ink)}
+  .pri:disabled{opacity:.6;cursor:wait}
+  #vista{height:440px;padding:0;overflow:hidden;position:relative}
+  #vista canvas{display:block;width:100%;height:100%}
+  #legenda{position:absolute;left:10px;bottom:8px;font-size:12px;color:var(--mut)}
+  #legenda i{display:inline-block;width:12px;height:3px;margin:0 4px 2px 10px;vertical-align:middle}
+  .col{display:flex;flex-direction:column;gap:14px;min-width:0}
+  .kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+  .kpi div{background:var(--pan);border:1px solid var(--lin);border-radius:10px;padding:10px 12px}
+  .kpi small{display:block;color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.6px}
+  .kpi strong{font-size:20px;font-variant-numeric:tabular-nums}
+  table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:13px}
+  th,td{padding:5px 8px;border-bottom:1px solid var(--lin);text-align:right}
+  th:first-child,td:first-child{text-align:left}
+  th{font-size:11px;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+  tr.best td{background:#fff7ed;font-weight:600}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:1100px){.two{grid-template-columns:1fr}}
+  .nota{color:var(--mut);font-size:12px;margin-top:8px}
+  .err{color:var(--ko);font-weight:600}
+  .tag{display:inline-block;padding:1px 7px;border-radius:9px;font-size:11px;font-weight:700}
+  .tag.ok{background:#dcfce7;color:var(--ok)} .tag.ko{background:#fee2e2;color:var(--ko)}
+  #risultati{display:none}
+</style>
+</head>
+<body>
+<header><b>ntcfem</b><span>Calcolo strutturale NTC 2018 · prototipo da validare con Edilus</span></header>
+<main>
+  <section class="pan">
+    <h2>Geometria</h2>
+    <div class="g">
+      <label>Numero di piani<input id="piani" type="number" min="1" max="12" value="5"></label>
+      <label>Interpiano [m]<input id="hpiano" type="number" step="0.05" value="3.10"></label>
+      <label class="full">Campate in X [m], separate da virgola<input id="campX" value="4.5, 5.0, 4.5"></label>
+      <label class="full">Campate in Y [m]<input id="campY" value="5.0, 4.0"></label>
+    </div>
+    <h2>Sezioni [cm] e materiale</h2>
+    <div class="g">
+      <label>Pilastri b (lungo Y)<input id="pb" type="number" value="30"></label>
+      <label>Pilastri h (lungo X)<input id="ph" type="number" value="40"></label>
+      <label>Travi b<input id="tb" type="number" value="30"></label>
+      <label>Travi h<input id="th" type="number" value="50"></label>
+      <label class="full">Calcestruzzo
+        <select id="cls"><option>C20/25</option><option selected>C25/30</option><option>C28/35</option><option>C30/37</option><option>C32/40</option></select></label>
+    </div>
+    <h2>Carichi solai [kN/m²]</h2>
+    <div class="g">
+      <label>G1 strutturale<input id="G1" type="number" step="0.1" value="3.2"></label>
+      <label>G2 non strutturale<input id="G2" type="number" step="0.1" value="2.5"></label>
+      <label>Q variabile<input id="Q" type="number" step="0.1" value="2.0"></label>
+      <label>ψ2 (Tab. 2.5.I)
+        <select id="psi2"><option value="0.3" selected>0,3 residenziale/uffici</option><option value="0.6">0,6 affollamento/negozi</option><option value="0.8">0,8 archivi</option><option value="0">0 coperture</option></select></label>
+    </div>
+    <h2>Azione sismica SLV</h2>
+    <div class="g">
+      <label>ag [g]<input id="ag" type="number" step="0.001" value="0.20"></label>
+      <label>F0<input id="F0" type="number" step="0.01" value="2.50"></label>
+      <label>Tc* [s]<input id="Tc" type="number" step="0.01" value="0.30"></label>
+      <label>Fattore q<input id="q" type="number" step="0.05" value="3.90"></label>
+      <label>Sottosuolo<select id="suolo"><option>A</option><option>B</option><option selected>C</option><option>D</option><option>E</option></select></label>
+      <label>Topografia<select id="topo"><option selected>T1</option><option>T2</option><option>T3</option><option>T4</option></select></label>
+    </div>
+    <p class="nota">ag, F0 e Tc* sono di esempio: usa quelli del sito (stessi valori che inserisci in Edilus).</p>
+    <button class="pri" id="btnCalcola">Calcola</button>
+    <div style="display:flex;gap:8px;margin-top:8px">
+      <button class="sec" id="btnScarica" style="flex:1">Scarica modello</button>
+      <button class="sec" id="btnApri" style="flex:1">Apri modello</button>
+      <input type="file" id="file" accept=".json" hidden>
+    </div>
+    <p id="stato" class="nota"></p>
+  </section>
+
+  <div class="col">
+    <section class="pan" id="vista"><div id="legenda"><i style="background:#c2410c"></i>pilastri<i style="background:#0f5c4f"></i>travi</div></section>
+
+    <div id="risultati" class="col">
+      <div class="kpi" id="kpi"></div>
+      <div class="two">
+        <section class="pan"><h2>Modi di vibrare</h2><table id="tModi"></table></section>
+        <section class="pan"><h2>Spostamenti di piano (spettro di progetto)</h2><table id="tSpost"></table>
+          <p class="nota" id="notaSpost"></p></section>
+      </div>
+    </div>
+
+    <section class="pan">
+      <h2>Ottimizza una trave</h2>
+      <div class="g" style="grid-template-columns:repeat(auto-fit,minmax(120px,1fr))">
+        <label>M_Ed [kNm]<input id="oM" type="number" value="180"></label>
+        <label>Larghezze [mm]<input id="oB" value="300, 400"></label>
+        <label>Altezze [mm]<input id="oH" value="400, 450, 500, 550, 600, 650"></label>
+        <label>Acciaio [€/kg]<input id="pA" type="number" step="0.05" value="1.60"></label>
+        <label>Calcestruzzo [€/m³]<input id="pC" type="number" step="1" value="140"></label>
+        <label>Casseri [€/m²]<input id="pK" type="number" step="1" value="30"></label>
+      </div>
+      <button class="sec" id="btnOtt" style="margin-top:10px">Trova la soluzione più economica</button>
+      <div id="ott"></div>
+    </section>
+  </div>
+</main>
+
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+"three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from "three";
+import {OrbitControls} from "three/addons/controls/OrbitControls.js";
+
+const $ = id => document.getElementById(id);
+const num = id => parseFloat(String($(id).value).replace(",", "."));
+const lista = id => $(id).value.split(/[;,]\s*|\s+/).map(s => parseFloat(s)).filter(x => x > 0);
+const fmt = (x, d = 1) => Number(x).toLocaleString("it-IT", {minimumFractionDigits: d, maximumFractionDigits: d});
+
+/* ---------- modello: stesso formato di esempi/telaio_prova.json ---------- */
+function generaModello() {
+  const cx = lista("campX"), cy = lista("campY"), np = Math.round(num("piani")), h = num("hpiano");
+  const xs = [0], ys = [0], zs = [0];
+  cx.forEach(L => xs.push(+(xs.at(-1) + L).toFixed(3)));
+  cy.forEach(L => ys.push(+(ys.at(-1) + L).toFixed(3)));
+  for (let k = 0; k < np; k++) zs.push(+(zs.at(-1) + h).toFixed(3));
+  const nodi = [], aste = [], id = {};
+  zs.forEach((z, k) => ys.forEach(y => xs.forEach(x => {
+    const n = "N" + (nodi.length + 1); id[`${x}|${y}|${k}`] = n;
+    nodi.push({id: n, x, y, z, incastro: k === 0});
+  })));
+  const asta = (i, j, sezione, tipo) => aste.push({id: (tipo === "pilastro" ? "P" : "T") + (aste.length + 1), i, j, sezione, tipo});
+  for (let k = 1; k < zs.length; k++) ys.forEach(y => xs.forEach(x => asta(id[`${x}|${y}|${k-1}`], id[`${x}|${y}|${k}`], "PIL", "pilastro")));
+  for (let k = 1; k < zs.length; k++) {
+    ys.forEach(y => xs.slice(1).forEach((x, i) => asta(id[`${xs[i]}|${y}|${k}`], id[`${x}|${y}|${k}`], "TRA", "trave")));
+    xs.forEach(x => ys.slice(1).forEach((y, i) => asta(id[`${x}|${ys[i]}|${k}`], id[`${x}|${y}|${k}`], "TRA", "trave")));
+  }
+  return {
+    descrizione: `Condominio ${np} piani, ${cx.length}x${cy.length} campate`,
+    nodi, aste,
+    sezioni: {PIL: {b: num("pb") / 100, h: num("ph") / 100, materiale: $("cls").value},
+              TRA: {b: num("tb") / 100, h: num("th") / 100, materiale: $("cls").value}},
+    impalcati: zs.slice(1).map(z => ({z, G1: num("G1"), G2: num("G2"), Q: num("Q"), psi2: num("psi2")})),
+    sismica: {ag: num("ag"), F0: num("F0"), Tc_star: num("Tc"), sottosuolo: $("suolo").value,
+              topografia: $("topo").value, q: num("q"), xi: 0.05},
+  };
+}
+
+/* ---------- vista 3D ---------- */
+const box = $("vista");
+const renderer = new THREE.WebGLRenderer({antialias: true});
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+box.prepend(renderer.domElement);
+const scene = new THREE.Scene(); scene.background = new THREE.Color(0xfbfbf9);
+const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 1000); camera.up.set(0, 0, 1);
+const controls = new OrbitControls(camera, renderer.domElement); controls.enableDamping = true;
+scene.add(new THREE.HemisphereLight(0xffffff, 0x999999, 1.2));
+let gruppo = new THREE.Group(); scene.add(gruppo);
+
+function disegna(m) {
+  scene.remove(gruppo); gruppo = new THREE.Group(); scene.add(gruppo);
+  const P = Object.fromEntries(m.nodi.map(n => [n.id, new THREE.Vector3(n.x, n.y, n.z)]));
+  const mat = {pilastro: new THREE.MeshLambertMaterial({color: 0xc2410c}), trave: new THREE.MeshLambertMaterial({color: 0x0f5c4f})};
+  for (const a of m.aste) {
+    const s = m.sezioni[a.sezione], p1 = P[a.i], p2 = P[a.j], L = p1.distanceTo(p2);
+    // travi: b orizzontale, h verticale; pilastri: h lungo X, b lungo Y (come nel solutore)
+    const geo = a.tipo === "trave" ? new THREE.BoxGeometry(s.b, s.h, L) : new THREE.BoxGeometry(s.h, s.b, L);
+    const mesh = new THREE.Mesh(geo, mat[a.tipo]);
+    mesh.position.copy(p1.clone().add(p2).multiplyScalar(0.5));
+    const dir = p2.clone().sub(p1).normalize();
+    if (a.tipo === "trave") {           // asse h verticale
+      const up = new THREE.Vector3(0, 0, 1), side = new THREE.Vector3().crossVectors(up, dir);
+      mesh.setRotationFromMatrix(new THREE.Matrix4().makeBasis(side, up, dir));
+      mesh.position.z -= s.h / 2;
+    } else mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), dir);
+    gruppo.add(mesh);
+  }
+  const xs = m.nodi.map(n => n.x), ys = m.nodi.map(n => n.y);
+  const [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+  const sol = new THREE.MeshBasicMaterial({color: 0x94a3b8, transparent: true, opacity: 0.18, side: THREE.DoubleSide, depthWrite: false});
+  m.impalcati.forEach(i => { const pl = new THREE.Mesh(new THREE.PlaneGeometry(x1 - x0, y1 - y0), sol);
+    pl.position.set((x0 + x1) / 2, (y0 + y1) / 2, i.z); gruppo.add(pl); });
+  const terra = new THREE.Mesh(new THREE.PlaneGeometry((x1 - x0) + 8, (y1 - y0) + 8), new THREE.MeshBasicMaterial({color: 0xe7e5df}));
+  terra.position.set((x0 + x1) / 2, (y0 + y1) / 2, -0.01); gruppo.add(terra);
+  const H = Math.max(...m.nodi.map(n => n.z)), c = new THREE.Vector3((x0 + x1) / 2, (y0 + y1) / 2, H / 2);
+  const R = Math.max(x1 - x0, y1 - y0, H) * 1.6;
+  camera.position.set(c.x + R, c.y - R * 1.1, c.z + R * 0.6); controls.target.copy(c); controls.update();
+}
+function ridimensiona() { const w = box.clientWidth, h = box.clientHeight; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+new ResizeObserver(ridimensiona).observe(box);
+(function loop() { requestAnimationFrame(loop); controls.update(); renderer.render(scene, camera); })();
+
+let modello = generaModello(), daFile = false; disegna(modello);
+document.querySelectorAll("main > section.pan input, main > section.pan select").forEach(el =>
+  el.addEventListener("change", () => { if (el.id === "file") return; daFile = false;
+    try { modello = generaModello(); disegna(modello); } catch (e) {} }));
+
+/* ---------- calcolo ---------- */
+async function post(url, dati) {
+  const r = await fetch(url, {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(dati)});
+  const j = await r.json(); if (!r.ok) throw new Error(j.errore || r.statusText); return j;
+}
+$("btnCalcola").onclick = async () => {
+  const b = $("btnCalcola"); b.disabled = true; b.textContent = "Calcolo in corso…"; $("stato").textContent = "";
+  try {
+    if (!daFile) { modello = generaModello(); disegna(modello); }
+    const t0 = performance.now(); const r = await post("/api/calcola", modello);
+    mostra(r); $("stato").textContent = `Calcolo eseguito in ${fmt((performance.now() - t0) / 1000, 1)} s · ${modello.nodi.length} nodi, ${modello.aste.length} aste`;
+  } catch (e) { $("stato").innerHTML = `<span class="err">Errore: ${e.message}</span>`; }
+  b.disabled = false; b.textContent = "Calcola";
+};
+function mostra(r) {
+  $("risultati").style.display = "flex";
+  const T1 = r.modi[0], mp = r.massa_partecipante_tot, W = r.W_totale_kN;
+  const okM = mp.X >= 85 && mp.Y >= 85;
+  $("kpi").innerHTML = `
+    <div><small>Peso sismico W</small><strong>${fmt(W, 0)} kN</strong></div>
+    <div><small>Periodo T1</small><strong>${fmt(T1.T_s, 3)} s</strong></div>
+    <div><small>Taglio base X</small><strong>${fmt(r.taglio_base_kN.X, 0)} kN</strong><br><small>${fmt(100 * r.taglio_base_kN.X / W)}% di W</small></div>
+    <div><small>Taglio base Y</small><strong>${fmt(r.taglio_base_kN.Y, 0)} kN</strong><br><small>${fmt(100 * r.taglio_base_kN.Y / W)}% di W</small></div>
+    <div><small>Massa partecipante</small><strong>${fmt(mp.X, 0)} / ${fmt(mp.Y, 0)}%</strong><br><span class="tag ${okM ? "ok" : "ko"}">${okM ? "≥ 85% OK" : "< 85%"}</span> <small>§7.3.3.1</small></div>`;
+  $("tModi").innerHTML = `<tr><th>Modo</th><th>T [s]</th><th>Mx %</th><th>My %</th><th>Sd/g</th></tr>` +
+    r.modi.map(m => `<tr><td>${m.modo}</td><td>${fmt(m.T_s, 3)}</td><td>${fmt(m.Mx_perc)}</td><td>${fmt(m.My_perc)}</td><td>${fmt(m.Sd_g, 3)}</td></tr>`).join("");
+  const sp = r.spostamenti, piani = [...new Set(sp.map(p => p.impalcato))];
+  const g = (d, k) => sp.find(p => p.direzione === d && p.impalcato === k);
+  $("tSpost").innerHTML = `<tr><th>Piano</th><th>u X [mm]</th><th>drift X</th><th>u Y [mm]</th><th>drift Y</th></tr>` +
+    piani.reverse().map(k => `<tr><td>${k}</td><td>${fmt(g("X", k).spostamento_mm, 2)}</td><td>${fmt(g("X", k).drift_perc, 3)}%</td><td>${fmt(g("Y", k).spostamento_mm, 2)}</td><td>${fmt(g("Y", k).drift_perc, 3)}%</td></tr>`).join("");
+  $("notaSpost").textContent = r.note.join(" ");
+}
+
+/* ---------- ottimizzazione trave ---------- */
+$("btnOtt").onclick = async () => {
+  $("ott").innerHTML = `<p class="nota">Provo tutte le combinazioni…</p>`;
+  try {
+    const r = await post("/api/ottimizza", {M_Ed: num("oM"), larghezze: lista("oB"), altezze: lista("oH"), cls: $("cls").value,
+      prezzi: {acciaio_euro_kg: num("pA"), cls_euro_m3: num("pC"), casseri_euro_m2: num("pK")}});
+    if (!r.soluzioni.length) { $("ott").innerHTML = `<p class="err">Nessuna sezione verifica: aumenta le dimensioni.</p>`; return; }
+    $("ott").innerHTML = `<table style="margin-top:10px"><tr><th>Sezione</th><th>Armatura tesa</th><th>kg/m</th><th>x/d</th><th>€/m</th></tr>` +
+      r.soluzioni.map((s, i) => `<tr class="${i ? "" : "best"}"><td>${s.sezione}</td><td>${s.armatura}</td><td>${fmt(s.kg_m, 2)}</td><td>${fmt(s.x_d, 2)}</td><td>${fmt(s.euro_m, 2)}</td></tr>`).join("") +
+      `</table><p class="nota">Solo flessione (§4.1.2.3.4.2), con As min/max (§4.1.6.1.1), interferro e x/d ≤ 0,45. Cambiando sezione nell'edificio va rifatta l'analisi globale.</p>`;
+  } catch (e) { $("ott").innerHTML = `<p class="err">Errore: ${e.message}</p>`; }
+};
+
+/* ---------- apri / salva ---------- */
+$("btnScarica").onclick = () => {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(modello, null, 2)], {type: "application/json"}));
+  a.download = "modello_ntcfem.json"; a.click();
+};
+$("btnApri").onclick = () => $("file").click();
+$("file").onchange = async e => {
+  try { modello = JSON.parse(await e.target.files[0].text()); disegna(modello); daFile = true;
+    $("stato").textContent = `Modello "${modello.descrizione || "senza nome"}" caricato: premi Calcola. Se modifichi i campi si torna al modello del modulo.`; }
+  catch (err) { $("stato").innerHTML = `<span class="err">File non valido</span>`; }
+};
+</script>
+</body>
+</html>
