@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0 - 2026-10-31
+- Ottimizzazione armature longitudinali a peso minimo (ntcfem/ottimizzazione/armature.py)
+- Confronto sezioni alternative a costo minimo con prezzario modificabile (ottimizzazione/sezioni.py)
+- Vincoli: MRd >= MEd, As min/max (4.1.6.1.1), interferro, x/d <= 0.45
+
 ## 0.2.0 - 2026-10-30
 - Catalogo dei 481 calcoli in dati/catalogo.json con fasi e stato (strumenti/catalogo.py)
 - Nucleo norme: combinazioni NTC 2.5.3, flessione e taglio sezioni c.a. (4.1.2.3)

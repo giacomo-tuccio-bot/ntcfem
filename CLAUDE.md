@@ -29,6 +29,14 @@ e Circolare n. 7/2019. Prototipo: i risultati vanno sempre confrontati con Edilu
 - Segui `docs/ROADMAP.md` per l'ordine di lavoro e le regole di ogni nuovo modulo
 - Verifiche di sezione riusabili in `ntcfem/norme/`; nuovi elementi in `ntcfem/elementi/`
 
+## Ottimizzazione (obiettivo principale del progetto)
+- Il calcolo numerico lo fa il codice in `ntcfem/ottimizzazione/`; Claude sceglie le strategie,
+  lancia le varianti, confronta e spiega. Mai proporre soluzioni non verificate dal codice.
+- Cambiare una sezione cambia le sollecitazioni: rifare sempre l'analisi globale e riverificare.
+- Obiettivo = costo totale (acciaio + cls + casseri + posa), non solo kg di ferro.
+- Preferire soluzioni ripetitive in cantiere (pochi diametri, sezioni uguali per piano).
+- Ogni proposta va approvata dal progettista.
+
 ## Prossimi passi
 1. Spettro dai parametri del sito (reticolo NTC per lat/long, interpolazione TR)
 2. Analisi dei carichi verticali e combinazioni SLU/SLE
