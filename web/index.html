@@ -46,10 +46,33 @@
   .tag{display:inline-block;padding:1px 7px;border-radius:9px;font-size:11px;font-weight:700}
   .tag.ok{background:#dcfce7;color:var(--ok)} .tag.ko{background:#fee2e2;color:var(--ko)}
   #risultati{display:none}
+  header .acc{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:13px}
+  header .acc button{padding:6px 12px}
+  dialog{border:1px solid var(--lin);border-radius:12px;padding:20px;width:min(360px,92vw)}
+  dialog::backdrop{background:#0006}
+  dialog label{margin-bottom:10px}
+  .lista{list-style:none;padding:0;margin:8px 0 0}
+  .lista li{display:flex;align-items:center;gap:6px;padding:6px 0;border-bottom:1px solid var(--lin)}
+  .lista li span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .lista li small{color:var(--mut)}
+  .mini{padding:4px 9px;font-size:12px}
+  [hidden]{display:none!important}
 </style>
 </head>
 <body>
-<header><b>ntcfem</b><span>Calcolo strutturale NTC 2018 · prototipo da validare con Edilus</span></header>
+<header><b>ntcfem</b><span>Calcolo strutturale NTC 2018 · prototipo da validare con Edilus</span>
+  <div class="acc" id="acc" hidden><span id="utente"></span>
+    <button class="sec" id="btnAccedi">Accedi</button><button class="sec" id="btnEsci" hidden>Esci</button></div>
+</header>
+<dialog id="dlgLogin">
+  <h2 style="margin-top:0">Accesso</h2>
+  <label>Email<input id="lEmail" type="email" autocomplete="email"></label>
+  <label>Password<input id="lPass" type="password" autocomplete="current-password" minlength="6"></label>
+  <div style="display:flex;gap:8px"><button class="pri" id="btnLogin" style="margin:0;flex:1;font-size:14px">Accedi</button>
+    <button class="sec" id="btnRegistra" style="flex:1">Registrati</button></div>
+  <p id="lMsg" class="nota"></p>
+  <button class="sec mini" id="btnChiudi">Chiudi</button>
+</dialog>
 <main>
   <section class="pan">
     <h2>Geometria</h2>
@@ -93,6 +116,13 @@
       <input type="file" id="file" accept=".json" hidden>
     </div>
     <p id="stato" class="nota"></p>
+    <div id="pannelloProgetti" hidden>
+      <h2>I miei progetti</h2>
+      <div style="display:flex;gap:8px"><input id="nomeProg" placeholder="Nome progetto, es. Condominio via Roma">
+        <button class="sec" id="btnSalva">Salva</button></div>
+      <ul class="lista" id="listaProg"></ul>
+    </div>
+    <p id="notaAccount" class="nota" hidden>Accedi per salvare i progetti nel tuo account.</p>
   </section>
 
   <div class="col">
@@ -134,6 +164,7 @@ import {OrbitControls} from "three/addons/controls/OrbitControls.js";
 const $ = id => document.getElementById(id);
 const num = id => parseFloat(String($(id).value).replace(",", "."));
 const lista = id => $(id).value.split(/[;,]\s*|\s+/).map(s => parseFloat(s)).filter(x => x > 0);
+const CAMPI = ["piani","hpiano","campX","campY","pb","ph","tb","th","cls","G1","G2","Q","psi2","ag","F0","Tc","q","suolo","topo"];
 const fmt = (x, d = 1) => Number(x).toLocaleString("it-IT", {minimumFractionDigits: d, maximumFractionDigits: d});
 
 /* ---------- modello: stesso formato di esempi/telaio_prova.json ---------- */
@@ -156,6 +187,7 @@ function generaModello() {
   }
   return {
     descrizione: `Condominio ${np} piani, ${cx.length}x${cy.length} campate`,
+    parametri: Object.fromEntries(CAMPI.map(id => [id, $(id).value])),
     nodi, aste,
     sezioni: {PIL: {b: num("pb") / 100, h: num("ph") / 100, materiale: $("cls").value},
               TRA: {b: num("tb") / 100, h: num("th") / 100, materiale: $("cls").value}},
@@ -209,7 +241,7 @@ function ridimensiona() { const w = box.clientWidth, h = box.clientHeight; rende
 new ResizeObserver(ridimensiona).observe(box);
 (function loop() { requestAnimationFrame(loop); controls.update(); renderer.render(scene, camera); })();
 
-let modello = generaModello(), daFile = false; disegna(modello);
+let modello = generaModello(), daFile = false, ultimiRisultati = null; disegna(modello);
 document.querySelectorAll("main > section.pan input, main > section.pan select").forEach(el =>
   el.addEventListener("change", () => { if (el.id === "file") return; daFile = false;
     try { modello = generaModello(); disegna(modello); } catch (e) {} }));
@@ -224,7 +256,7 @@ $("btnCalcola").onclick = async () => {
   try {
     if (!daFile) { modello = generaModello(); disegna(modello); }
     const t0 = performance.now(); const r = await post("/api/calcola", modello);
-    mostra(r); $("stato").textContent = `Calcolo eseguito in ${fmt((performance.now() - t0) / 1000, 1)} s · ${modello.nodi.length} nodi, ${modello.aste.length} aste`;
+    ultimiRisultati = r; mostra(r); $("stato").textContent = `Calcolo eseguito in ${fmt((performance.now() - t0) / 1000, 1)} s · ${modello.nodi.length} nodi, ${modello.aste.length} aste`;
   } catch (e) { $("stato").innerHTML = `<span class="err">Errore: ${e.message}</span>`; }
   b.disabled = false; b.textContent = "Calcola";
 };
@@ -261,6 +293,16 @@ $("btnOtt").onclick = async () => {
 };
 
 /* ---------- apri / salva ---------- */
+function caricaModello(m, risultati = null) {
+  if (m.parametri) {           // modello creato con il modulo: si ripristinano i campi
+    CAMPI.forEach(id => { if (id in m.parametri) $(id).value = m.parametri[id]; });
+    modello = generaModello(); daFile = false;
+  } else { modello = m; daFile = true; }
+  disegna(modello);
+  ultimiRisultati = risultati;
+  if (risultati) mostra(risultati); else $("risultati").style.display = "none";
+  $("stato").textContent = `Aperto: ${m.descrizione || "modello"}${risultati ? "" : " · premi Calcola"}`;
+}
 $("btnScarica").onclick = () => {
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([JSON.stringify(modello, null, 2)], {type: "application/json"}));
@@ -268,10 +310,73 @@ $("btnScarica").onclick = () => {
 };
 $("btnApri").onclick = () => $("file").click();
 $("file").onchange = async e => {
-  try { modello = JSON.parse(await e.target.files[0].text()); disegna(modello); daFile = true;
-    $("stato").textContent = `Modello "${modello.descrizione || "senza nome"}" caricato: premi Calcola. Se modifichi i campi si torna al modello del modulo.`; }
+  try { caricaModello(JSON.parse(await e.target.files[0].text())); }
   catch (err) { $("stato").innerHTML = `<span class="err">File non valido</span>`; }
 };
+
+/* ---------- account e progetti (Supabase) ---------- */
+let sb = null, utente = null;
+const esc = t => String(t).replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+async function initAccount() {
+  try {
+    const cfg = await (await fetch("/api/config")).json();
+    if (!cfg.supabase_url || !cfg.supabase_key) return;          // account non configurati
+    const {createClient} = await import("https://esm.sh/@supabase/supabase-js@2");
+    sb = createClient(cfg.supabase_url, cfg.supabase_key);
+    $("acc").hidden = false;
+    sb.auth.onAuthStateChange((_e, sessione) => aggiornaUtente(sessione?.user || null));
+    const {data} = await sb.auth.getSession(); aggiornaUtente(data.session?.user || null);
+  } catch (e) { console.warn("Account non disponibili:", e); }
+}
+function aggiornaUtente(u) {
+  utente = u;
+  $("utente").textContent = u ? u.email : "";
+  $("btnAccedi").hidden = !!u; $("btnEsci").hidden = !u;
+  $("pannelloProgetti").hidden = !u; $("notaAccount").hidden = !!u;
+  if (u) elencaProgetti(); else $("listaProg").innerHTML = "";
+}
+async function elencaProgetti() {
+  const {data, error} = await sb.from("progetti").select("id,nome,aggiornato").order("aggiornato", {ascending: false});
+  if (error) { $("listaProg").innerHTML = `<li class="err">${esc(error.message)}</li>`; return; }
+  $("listaProg").innerHTML = data.length ? data.map(p => `<li><span>${esc(p.nome)}<br><small>${new Date(p.aggiornato).toLocaleString("it-IT")}</small></span>
+    <button class="sec mini" data-apri="${p.id}">Apri</button><button class="sec mini" data-elimina="${p.id}">✕</button></li>`).join("")
+    : `<li><small>Nessun progetto salvato</small></li>`;
+}
+$("listaProg").onclick = async e => {
+  const id = e.target.dataset.apri || e.target.dataset.elimina; if (!id) return;
+  if (e.target.dataset.apri) {
+    const {data, error} = await sb.from("progetti").select("nome,modello,risultati").eq("id", id).single();
+    if (error) return alert(error.message);
+    $("nomeProg").value = data.nome; caricaModello(data.modello, data.risultati);
+  } else if (confirm("Eliminare il progetto?")) {
+    const {error} = await sb.from("progetti").delete().eq("id", id); if (error) alert(error.message); elencaProgetti();
+  }
+};
+$("btnSalva").onclick = async () => {
+  const nome = $("nomeProg").value.trim(); if (!nome) { $("nomeProg").focus(); return; }
+  if (!daFile) modello = generaModello();
+  const {data: esist} = await sb.from("progetti").select("id").eq("nome", nome).limit(1);
+  const riga = {nome, modello, risultati: ultimiRisultati};
+  const {error} = esist?.length ? await sb.from("progetti").update(riga).eq("id", esist[0].id)
+                                : await sb.from("progetti").insert(riga);
+  $("stato").textContent = error ? "Errore: " + error.message : `Salvato "${nome}"`;
+  elencaProgetti();
+};
+$("btnAccedi").onclick = () => { $("lMsg").textContent = ""; $("dlgLogin").showModal(); };
+$("btnChiudi").onclick = () => $("dlgLogin").close();
+$("btnEsci").onclick = () => sb.auth.signOut();
+$("btnLogin").onclick = async () => {
+  const {error} = await sb.auth.signInWithPassword({email: $("lEmail").value, password: $("lPass").value});
+  if (error) $("lMsg").innerHTML = `<span class="err">${esc(error.message)}</span>`; else $("dlgLogin").close();
+};
+$("btnRegistra").onclick = async () => {
+  const {data, error} = await sb.auth.signUp({email: $("lEmail").value, password: $("lPass").value,
+    options: {emailRedirectTo: location.origin}});
+  $("lMsg").innerHTML = error ? `<span class="err">${esc(error.message)}</span>`
+    : data.session ? "Account creato." : "Controlla la tua email e clicca il link di conferma, poi accedi.";
+  if (data?.session) $("dlgLogin").close();
+};
+initAccount();
 </script>
 </body>
 </html>

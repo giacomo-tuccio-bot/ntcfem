@@ -6,7 +6,7 @@ con controllo dei risultati tramite Claude Code.
 > Strumento in sviluppo, non validato: i risultati vanno confrontati con un software
 > commerciale (es. Edilus). La responsabilita' del calcolo resta del progettista.
 
-## Cosa fa oggi (v0.4.1)
+## Cosa fa oggi (v0.5.0)
 - Telaio 3D con impalcati rigidi, masse G1+G2+psi2*Q
 - Analisi modale (periodi, masse partecipanti)
 - Spettro di progetto SLV NTC 2018 e combinazione CQC
@@ -18,6 +18,12 @@ con controllo dei risultati tramite Claude Code.
 1. Su vercel.com: Add New > Project > importa il repo `ntcfem` da GitHub.
 2. Vercel riconosce l'app Python da `pyproject.toml` (entrypoint `ntcfem.server:app`): premere Deploy.
 3. Ogni push su `main` aggiorna il sito da solo.
+
+### Account (Supabase)
+1. Applicare `supabase/migrations/001_progetti.sql` al progetto Supabase.
+2. Su Vercel, Settings > Environment Variables: `SUPABASE_URL` e `SUPABASE_PUBLISHABLE_KEY` (chiave pubblica), poi Redeploy.
+3. In Supabase > Authentication > URL Configuration: Site URL = indirizzo del sito Vercel.
+Senza queste variabili il sito funziona lo stesso, senza account.
 
 In locale la stessa pagina: `python strumenti/server_locale.py` e apri http://localhost:8000
 

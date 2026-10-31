@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0 - 2026-10-31
+- Account utenti con Supabase: registrazione, accesso, uscita
+- "I miei progetti": salva, apri (con risultati), sovrascrivi, elimina; dati protetti con Row Level Security
+- Migrazione `supabase/migrations/001_progetti.sql`; endpoint `GET /api/config` (variabili SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY)
+- Il modello salva i parametri del modulo e li ripristina all'apertura
+
 ## 0.4.1 - 2026-10-31
 - Correzione deploy Vercel: unica app WSGI `ntcfem/server.py` (pagina + API), entrypoint in pyproject.toml
 - Rimossi api/ e vercel.json; server locale con wsgiref

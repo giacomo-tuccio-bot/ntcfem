@@ -6,8 +6,10 @@ e in locale da strumenti/server_locale.py.
     GET  /               pagina web/index.html
     POST /api/calcola    corpo = modello JSON  -> risultati
     POST /api/ottimizza  {"M_Ed", "larghezze", "altezze", "prezzi"} -> soluzioni
+    GET  /api/config     URL e chiave pubblica Supabase (variabili d'ambiente)
 """
 import json
+import os
 from pathlib import Path
 
 from .web import calcola, ottimizza_trave
@@ -33,6 +35,12 @@ def app(environ, start_response):
 
     if metodo == "GET" and percorso in ("/", "/index.html"):
         return _risposta(start_response, "200 OK", PAGINA.read_bytes(), "text/html; charset=utf-8")
+
+    if metodo == "GET" and percorso == "/api/config":
+        # chiavi pubbliche (publishable): la sicurezza dei dati e' affidata alla RLS di Supabase
+        return _json(start_response, "200 OK", {
+            "supabase_url": os.environ.get("SUPABASE_URL", ""),
+            "supabase_key": os.environ.get("SUPABASE_PUBLISHABLE_KEY", "")})
 
     if percorso in API:
         if metodo != "POST":

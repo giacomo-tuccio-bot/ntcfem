@@ -25,6 +25,8 @@ e Circolare n. 7/2019. Prototipo: i risultati vanno sempre confrontati con Edilu
 - `ntcfem/aggiornamenti.py`  aggiornamento da GitHub (git pull)
 - `ntcfem/server.py`  app WSGI unica (pagina + /api/calcola, /api/ottimizza), entrypoint Vercel in `pyproject.toml`
 - `ntcfem/web.py`  funzioni chiamate dalle API; `web/index.html` pagina
+- Account: Supabase Auth + tabella `progetti` (RLS, `supabase/migrations/`); il browser usa solo la chiave pubblica.
+  Ogni nuova tabella deve avere RLS attiva e policy per `authenticated` con `(select auth.uid())`.
 - `strumenti/server_locale.py`  stessa app in locale (porta 8000)
 - Online le dipendenze sono solo quelle di `requirements.txt`: tenerle leggere
 
